@@ -1633,7 +1633,48 @@
 
             .hero-content {
                 padding: 0 20px;
-                margin-top: 40px;
+                margin-top: 20px;
+            }
+
+            .hero-cta-group {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .hero-cta-group .btn {
+                padding: 12px 24px;
+                font-size: 14px;
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .scroll-indicator {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: none !important;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                animation: none;
+            }
+
+            .scroll-indicator span {
+                display: block;
+            }
+
+            .scroll-indicator i {
+                animation: bounce-mobile 2s infinite ease-in-out;
+                display: inline-block;
+            }
+
+            @keyframes bounce-mobile {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(8px); }
             }
 
             .problem-grid,
