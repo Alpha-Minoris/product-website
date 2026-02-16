@@ -1343,6 +1343,7 @@
 
         /* Mobile Responsive */
         @media (max-width: 1024px) {
+            .hero { padding-top: 100px; }
             .problem-grid, .features-grid { grid-template-columns: repeat(2, 1fr); }
             .pricing-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
             .pricing-card.featured { transform: none; order: -1; }
@@ -1354,6 +1355,13 @@
         }
 
         @media (max-width: 768px) {
+            .navbar { padding: 16px 20px; }
+            .hero { 
+                min-height: calc(100vh - 80px); 
+                padding-top: 80px;
+                justify-content: flex-start;
+            }
+            .hero-content { padding-top: 20px; }
             .nav-links { display: none; }
             .mobile-menu-btn { display: block; }
             .problem-grid, .features-grid { grid-template-columns: 1fr; }
